@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: beige;
+    display: grid;
+    place-items: center;
+}
+.preloader{
+    border: 15px solid black;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    border-top-color: orange;
+    background-color: beige;
+    animation: preloader 1.3s linear infinite;
+}
+@keyframes preloader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
